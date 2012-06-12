@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<title>Demo with footer</title>
+<style type="text/css">
+html, body { height: 100%; margin: 0; padding: 0; margin:0 0px;}
+html>body #all { height: auto; min-height: 100%; }
+#all { height: 100%; width:502px; position: relative; color: #404040;margin:0 auto;}
+#empty, #footer { height: 32px; }
+#footer { bottom: 0; left: 0; margin-bottom:10px; position: absolute; width: 570px; display:block; background:url('/images/footer.gif');border:1px #376FA7 solid;}
+#main {padding-top:0px;}
+#content {padding-left:40px; width: 532px;border:1px #376FA7 solid;}
+body {background:#D1EAF4;font-size:12px;font-family: Arial;}
+h3{color: black;font-size:15px;font-family: Tahoma;margin:0;padding:5px;line-height:15px;}
+
+</style>
+    <script>
+    // this is High browser versions for demo. By default there is ie8, ff13,opera11 and chrome 18
+    var stable_browsers={'Explorer':10,'Firefox':25,'Opera':12,'Chrome':22};
+    </script>
+<script charset="windows-1251" type="text/javascript" src="http://2s.ru/2012/t142_browser_suggest/browser_suggest_en.js"></script>
+<script>var i=1; function addtext(el){a=el.parentNode;a.innerHTML=a.innerHTML+'<h1>'+(i++)+'</h1>test<br>test';}</script>
+</head>
+<body>
+<div style="position:absolute;top:0;right:0;width:100px;height:100px;background:red;"></div>
+<div id="all">
+        <div id="main">
+                <div id="content">
+                <h3>Контент страницы</h3>
+                <br><input type="button" value="Добавить контента" onclick="addtext(this);">
+                </div>
+        </div>
+        <br style="clear:both">
+        <div id="empty">&nbsp;</div>
+        <div id="footer">
+                <h3>Эта надпись снизу сколько бы контента не было на странице</h3>
+        </div>
+</body>
+</html>
