@@ -85,7 +85,7 @@ var browser_toolbar_init=function(){
 			windows='xp';
 		else if(navigator.userAgent.indexOf("Windows NT 6.0")>0)
 			windows='vista';
-		else if(navigator.userAgent.indexOf("Windows NT 7.0")>0)
+		else if(navigator.userAgent.indexOf("Windows NT 6.1")>0)
 			windows='seven';
 		else return;
 
