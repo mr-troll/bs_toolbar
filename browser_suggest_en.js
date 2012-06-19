@@ -99,11 +99,17 @@ var browser_toolbar_init=function(){
 	else if(BrowserDetect.browser=='Chrome'){
   		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Update your browser - '+chrome_icon+BrowserDetect.browser+" "+BrowserDetect.version+' to latest version '+stable_browsers[BrowserDetect.browser]+'. Use browser menu  "About Google Chrome" or <a href="https://www.google.com/chrome?hl=ru">Google</a> download link. </span>';
 	}
+	else if(BrowserDetect.browser=='Safari'){
+  		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Please, update your browser - '+safari_icon+BrowserDetect.browser+" "+BrowserDetect.version+', to version '+stable_browsers[BrowserDetect.browser]+'. </span>';
+	}
 	else if(BrowserDetect.browser=='Firefox'){
 		toolbar.innerHTML='<span style="display:inline-block;height:30px;">We recommend you to update your browser, '+firefox_icon+BrowserDetect.browser+" "+BrowserDetect.version+' to latest version '+stable_browsers[BrowserDetect.browser]+'. Use browser menu "Help » About Firefox". Or  <a href="http://www.mozilla.org/ru/firefox/fx/">Mozilla</a> download link. </span>';
 	}
 	else if(BrowserDetect.browser=='Opera'){
 		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Update your browser - '+opera_icon+BrowserDetect.browser+" "+BrowserDetect.version+', to latest version '+stable_browsers[BrowserDetect.browser]+'. Use browser menu "Help » Check for updates" or <a href="http://www.opera.com/download/">Opera Software</a> download link.  </span>';
+	}
+	else{
+  		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Please, update your browser, '+BrowserDetect.browser+" "+BrowserDetect.version+', to version '+stable_browsers[BrowserDetect.browser]+', that is more suitable for this site. </span>';
 	}
 
 	if(BrowserDetect.browser=='Explorer' && BrowserDetect.version<=7){

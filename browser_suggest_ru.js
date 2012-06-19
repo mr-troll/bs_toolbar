@@ -99,12 +99,18 @@ var browser_toolbar_init=function(){
 	else if(BrowserDetect.browser=='Chrome'){
   		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Обновите ваш браузер, '+chrome_icon+BrowserDetect.browser+" "+BrowserDetect.version+', до версии '+stable_browsers[BrowserDetect.browser]+'. Выберите в меню "О браузере Google Chrome" и он обновится. Или скачайте с <a href="https://www.google.com/chrome?hl=ru">сайта Google</a>.</span>';
 	}
+	else if(BrowserDetect.browser=='Safari'){
+  		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Пожалуйста, обновите ваш браузер, '+safari_icon+BrowserDetect.browser+" "+BrowserDetect.version+', до версии '+stable_browsers[BrowserDetect.browser]+'. </span>';
+	}
 	else if(BrowserDetect.browser=='Firefox'){
 		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Рекомендуем обновить ваш браузер, '+firefox_icon+BrowserDetect.browser+" "+BrowserDetect.version+', до версии '+stable_browsers[BrowserDetect.browser]+'. Выберите в меню браузера "Справка » О Firefox". Либо зайдите на <a href="http://www.mozilla.org/ru/firefox/fx/">сайт Mozilla</a>. </span>';
 	}
 	else if(BrowserDetect.browser=='Opera'){
 		toolbar.style.fontSize='13px';
 		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Обновите ваш браузер, '+opera_icon+BrowserDetect.browser+" "+BrowserDetect.version+', до версии '+stable_browsers[BrowserDetect.browser]+'. Выберите в меню браузера "Справка » Проверить обновления". Либо зайдите на <a href="http://www.opera.com/download/">сайт Opera Software</a>. </span>';
+	}
+	else{
+  		toolbar.innerHTML='<span style="display:inline-block;height:30px;">Пожалуйста, обновите ваш браузер, '+BrowserDetect.browser+" "+BrowserDetect.version+', до версии '+stable_browsers[BrowserDetect.browser]+'. В нём сайт будет работать лучше =)</span>';
 	}
 
 	if(BrowserDetect.browser=='Explorer' && BrowserDetect.version<=7){
